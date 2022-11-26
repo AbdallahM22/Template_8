@@ -1,0 +1,207 @@
+/* Start Global Rules  */
+:root {
+    --dark: #19283f;
+    --green: #01bfb9;
+    --red: #ff3150;
+    --yellow: #ffc501;
+    --paragraph-color: #a8b9c0;
+    --section-color: #eff7fa;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Start Component  */
+.main-button {
+    color: var(--yellow);
+    background-color: var(--red);
+}
+.main-button:focus {
+    box-shadow: none;
+}
+
+.title {
+    max-width: 275px;
+}
+.title p {
+    font-size: 0.9rem !important;
+}
+.title p::before {
+    content: "";
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 1px;
+    background-color: var(--green);
+    position: absolute;
+}
+/* End Component  */
+
+/* End Global Rules  */
+
+
+/* Start navbar  */
+.navbar {
+    background-color: var(--dark);
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler[aria-expanded= "true"] {
+    border-color: white;
+}
+.nav-link {
+    color: white !important;
+}
+.nav-link.active,
+.nav-link:hover {
+    color: var(--green) !important;
+}
+.navbar svg {
+    color: #01bfb9;
+}
+.navbar .search::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background-color: var(--green);
+}
+
+
+
+/* End navbar  */
+
+/* Start Landing */
+.landing {
+    background-color: var(--dark);
+    height: calc(100vh - 60px);
+}
+/* End Landing */
+
+/* Start Services  */
+.number {
+    font-size: 9rem;
+    color: var(--section-color);
+    position: relative;
+    top: 40px;
+}
+.shape {
+    font-size: 2rem;
+    position: relative;
+    color: var(--green);
+}
+.services h4 {
+    color: var(--yellow);
+}
+/* End Services  */
+
+/* Start Portfolio  */
+.portfolio {
+    background-color: var(--section-color);
+}
+.portfolio li.active,
+.portfolio li:hover {
+    background-color: var(--red);
+    color: var(--yellow);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.portfolio .info {
+    background-color: #01bfb9d1;
+    width: calc(100% - 24px);
+}
+.portfolio .image {
+    cursor: pointer;
+}
+.portfolio .image:hover .info {
+    top: 0 !important;
+    transition: 0.3s;
+}
+/* End Portfolio  */
+.about .info p {
+    font-size: 12px;
+}
+/* End About  */
+
+/* Start Meet The Team */
+.team {
+    background-color: var(--section-color);
+}
+.team .title-team h2 {
+    color: var(--yellow);
+}
+.team .title-team p {
+    font-size: 13px;
+    max-width: 80%;
+}
+.team .row h4 {
+    background-color: var(--green);
+    color: white;
+}
+blockquote {
+    font-size: 12px;
+    height: 104px;
+}
+/* End Meet The Team */
+/* Start New Advertise */
+.advertise {
+    background-color: var(--dark);
+}
+.advertise p {
+    font-size: 13px;
+}
+/* End New Advertise */
+
+/* Start New Sletter */
+.newsletter {
+    background-color: var(--yellow);
+}
+.newsletter .btn {
+    color: var(--yellow);
+    background-color: var(--dark);
+}
+input[type="email"] {
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: transparent;
+}
+input[type="email"]::placeholder {
+    color: white;
+}
+/* End New Sletter */
+/* Start Footer  */
+.footer {
+    background-color: var(--dark);
+}
+.footer p {
+    font-size: 12px;
+}
+.footer .row div:first-of-type p:nth-of-type(2) span {
+    color: var(--green);
+}
+.footer .row div:first-of-type p:last-of-type span {
+    color: var(--yellow);
+}
+.footer li {
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+.footer button {
+    background-color: var(--red);
+}
+.facebook {
+    background-color: #1877f2;
+}
+.twitter {
+    background-color: #1da1f2;
+}
+.linkedin {
+    background-color: #0077b5;
+
+}
+/* End Footer  */
